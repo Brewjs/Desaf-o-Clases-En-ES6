@@ -1,4 +1,4 @@
-import Impuesto from '.cliente.js'
+import Cliente from '.cliente.js'
 
 class Impuestos {
     contructor(montoBrutoAnual, deducciones) {
