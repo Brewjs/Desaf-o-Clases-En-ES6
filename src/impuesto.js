@@ -1,9 +1,8 @@
-import Cliente from '.cliente.js'
-
-class Impuestos {
-    contructor(montoBrutoAnual, deducciones) {
+export default class Impuestos {
+    
+    constructor(montoBrutoAnual, deducciones) {
         this._montoBrutoAnual = montoBrutoAnual;
-        this._deducciones = deducciones
+        this._deducciones = deducciones;
     }
     get montoBrutoAnual() {
         return this._montoBrutoAnual
@@ -11,11 +10,10 @@ class Impuestos {
     set montoBrutoAnual(montoBrutoAnual) {
         this._montoBrutoAnual = montoBrutoAnual
     }
-    get deducciones(){
+    get deducciones() {
         return this._deducciones
     }
-    set deducciones(deducciones){
+    set deducciones(deducciones) {
         this._deducciones = deducciones
     }
 }
-

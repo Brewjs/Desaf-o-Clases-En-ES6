@@ -4,14 +4,13 @@ export default class Cliente {
         this._nombre = nombre;
         this._impuesto = impuesto;
     }
-
     get nombre() {
-        return this.nombre
+        return this._nombre
     }
     set nombre(nombre) {
-        this._nombre = nombre
+        this._nombre = nombre;
     }
-   calcularImpuesto(montoBrutoAnual, deducciones){
-       return((montoBrutoAnual - deducciones) * 21%);
-   }
+    calcularImpuesto(montoBrutoAnual, deducciones) {
+        return ((montoBrutoAnual - deducciones) * 21 / 100);
+    }
 }
